@@ -4,6 +4,8 @@
 
 div {
     display: block;
+    all: unset;
+    box-sizing: border-box;
 }
 
 .consent-policy {
@@ -18,8 +20,6 @@ div {
     max-width: 24em;
     overflow: hidden;
     position: fixed;
-    transform: translateY(1.6em);
-    visibility: hidden;
     z-index: 1;
     
     color: #2c2f31;
@@ -30,3 +30,46 @@ div {
     text-rendering: optimizeLegibility;
 }
 
+.cm-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+    --vw: 19.03px;
+    --vh: 9.57px;
+    --vh-initial: 9.57px;
+}
+
+.cm-button {
+    display: block;
+}
+
+.cm-button-close {
+    border-radius: 0;
+    font-size: 1em;
+    height: 42px;
+    min-width: auto;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 42px;
+}
+
+.cm-button-secondary {
+    background: transparent;
+    border-color: #E7E7E7;
+    color: #2c2f31;
+}
+
+.cm-button {
+    border: 1px solid #020b44;
+    font-weight: 600;
+    min-height: 42px;
+    text-align: center;
+    outline: revert;
+    outline-offset: 2px;
+    margin: 0;    
+}
