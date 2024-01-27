@@ -1,0 +1,16 @@
+.consent-policy {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    bottom: 1rem;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0.625em 1.875em #0000024d;
+    display: flex;
+    flex-direction: column;
+    max-width: 24em;
+    overflow: hidden;
+    position: fixed;
+    transform: translateY(1.6em);
+    visibility: hidden;
+    z-index: 1;
+}
